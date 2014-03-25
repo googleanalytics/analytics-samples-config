@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Account Summaries Demo - Account Tree and Index</title>
+    <script src="account_index.js"></script>
+    <style>
+      select {
+        width: 330px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Account Summaries Demo</h1>
+    <div id="accounts"></div>
+    <div id="properties"></div>
+    <div id="profiles"></div>
+    <hr/>
+    <div id="profile-details"></div>
+  </body>
+
+  <!--
+    Auth required and call to initSummaries with response from
+    Management API for AccountSummaries.
+
+    This is for demo purposes only.
+  -->
+  <script src="https://www.googleapis.com/analytics/v3/management/accountSummaries?callback=initSummaries"></script>
+</html>
